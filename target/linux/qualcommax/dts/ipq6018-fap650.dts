@@ -198,14 +198,6 @@
 	};
 };
 
-&usb2 {
-	status = "okay";
-};
-
-&usb3 {
-	status = "okay";
-};
-
 &edma {
 	status = "okay";
 };
@@ -358,9 +350,13 @@
 };
 
 &usb3 {
+	dr_mode = "host";
+
 	status = "okay";
 };
 
 &usb2 {
+	dr_mode = "host";
+
 	status = "okay";
 };
